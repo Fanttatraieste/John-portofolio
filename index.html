@@ -13,8 +13,84 @@
   </head>
   <body>
     <!------------- Header ----------------->
-    <header></header>
-    <main></main>
+    <header class="header container">
+      <ul class="header__nav">
+        <li><a class="header__link">Works</a></li>
+        <li><a class="header__link">Blog</a></li>
+        <li><a class="header__link">Contact</a></li>
+      </ul>
+      <button class="header__button">
+        <svg class="header__icon">
+          <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </header>
+    <!------------- Main ----------------->
+    <main>
+      <!------------- Hero ----------------->
+      <section class="container hero">
+        <div class="hero__image-section">
+          <div class="hero__circle"></div>
+          <img class="hero__image" src="./images/John.png" alt="John" />
+        </div>
+        <div class="hero__inner">
+          <h1 class="hero__title">Hi, I am John, Creative Technologist</h1>
+          <p class="hero__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button class="hero__btn">Download Resume</button>
+        </div>
+      </section>
+      <!------------- Post ----------------->
+      <section class="post">
+        <div class="post__inner container">
+          <div class="post__element">
+            <h3 class="subtitle">Recent posts</h3>
+            <a class="post__link">View all</a>
+          </div>
+          <ul class="post__list">
+            <li class="post__item">
+              <h2 class="post__subtitle">
+                Making a design system from scratch
+              </h2>
+              <ul class="post__calendar">
+                <li class="post__calendar__item">
+                  <p class="post__text">12 Feb 2020</p>
+                </li>
+                <li class="post__calendar__item">
+                  <p class="post__text">Design, Pattern</p>
+                </li>
+              </ul>
+              <p class="post__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.<br />
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </li>
+            <li class="post__item">
+              <h2 class="post__subtitle">
+                Creating pixel perfect icons in Figma
+              </h2>
+              <ul class="post__calendar">
+                <li class="post__calendar__item">
+                  <p class="post__text">12 Feb 2020</p>
+                </li>
+                <li class="post__calendar__item">
+                  <p class="post__text">Design, Pattern</p>
+                </li>
+              </ul>
+              <p class="post__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.<br />
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <!------------ JS Files --------------->
   </body>
