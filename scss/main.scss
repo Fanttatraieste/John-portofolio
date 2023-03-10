@@ -2,6 +2,8 @@
 @import "../scss/utils/vars";
 @import "../scss/components/hero";
 @import "../scss/components/post";
+@import "../scss/components/work";
+@import "../scss/components/footer";
 
 * {
   padding: 0px;
@@ -44,6 +46,20 @@ p {
   line-height: 3.33;
   color: var(--black-color);
   text-align: center;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+  &__link {
+    color: var(--black-color);
+  }
+  &__list {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 744px) {
