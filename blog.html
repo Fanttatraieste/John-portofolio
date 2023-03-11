@@ -15,6 +15,7 @@
     <!------------- Header ----------------->
     <header class="header container">
       <ul class="header__nav">
+        <li><a class="header__link" href="index.html">Home</a></li>
         <li><a class="header__link">Works</a></li>
         <li><a class="header__link" href="blog.html">Blog</a></li>
         <li><a class="header__link" href="#contact">Contact</a></li>
@@ -27,40 +28,19 @@
     </header>
     <!------------- Main ----------------->
     <main>
-      <!------------- Hero ----------------->
-      <section class="container hero">
-        <div class="hero__image-section">
-          <div class="hero__circle"></div>
-          <img class="hero__image" src="./images/John.png" alt="John" />
-        </div>
-        <div class="hero__inner">
-          <h1 class="hero__title">Hi, I am John, Creative Technologist</h1>
-          <p class="hero__text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-          <button class="hero__btn">Download Resume</button>
-        </div>
-      </section>
-      <!------------- Post ----------------->
-      <section class="post">
-        <div class="post__inner container">
-          <div class="post__element">
-            <h3 class="subtitle">Recent posts</h3>
-            <a class="post__link">View all</a>
-          </div>
-          <ul class="post__list">
-            <li class="post__item">
+        <section class="blog container">
+            <h2 class="blog__title">Blog</h2>
+            <ul class="post__list blog__list">
+            <li class="post__item blog__item">
               <h2 class="post__subtitle">
-                Making a design system from scratch
+                UI Interactions of the week
               </h2>
               <ul class="post__calendar">
                 <li class="post__calendar__item">
-                  <p class="post__text">12 Feb 2020</p>
+                  <p class="post__text">12 Feb 2019</p>
                 </li>
                 <li class="post__calendar__item">
-                  <p class="post__text">Design, Pattern</p>
+                  <p class="post__text post__text1">Express, Handlebars</p>
                 </li>
               </ul>
               <p class="post__text">
@@ -69,16 +49,52 @@
                 Exercitation veniam consequat sunt nostrud amet.
               </p>
             </li>
-            <li class="post__item">
+            <li class="post__item blog__item">
               <h2 class="post__subtitle">
-                Creating pixel perfect icons in Figma
+                UI Interactions of the week
               </h2>
               <ul class="post__calendar">
                 <li class="post__calendar__item">
-                  <p class="post__text">12 Feb 2020</p>
+                  <p class="post__text">12 Feb 2019</p>
                 </li>
                 <li class="post__calendar__item">
-                  <p class="post__text">Design, Pattern</p>
+                  <p class="post__text post__text1">Design, Pattern</p>
+                </li>
+              </ul>
+              <p class="post__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.<br />
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </li>
+            <li class="post__item blog__item">
+              <h2 class="post__subtitle">
+                UI Interactions of the week
+              </h2>
+              <ul class="post__calendar">
+                <li class="post__calendar__item">
+                  <p class="post__text">12 Feb 2019</p>
+                </li>
+                <li class="post__calendar__item">
+                  <p class="post__text post__text1">Express, Handlebars</p>
+                </li>
+              </ul>
+              <p class="post__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.<br />
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </li>
+            <li class="post__item blog__item">
+              <h2 class="post__subtitle">
+                UI Interactions of the week
+              </h2>
+              <ul class="post__calendar">
+                <li class="post__calendar__item">
+                  <p class="post__text">12 Feb 2019</p>
+                </li>
+                <li class="post__calendar__item">
+                  <p class="post__text post__text1">Design, Pattern</p>
                 </li>
               </ul>
               <p class="post__text">
@@ -88,71 +104,7 @@
               </p>
             </li>
           </ul>
-        </div>
-      </section>
-      <!------------- Work ----------------->
-      <section class="work container">
-        <h3 class="subtitle">Featured works</h3>
-        <ul class="work__list">
-          <li class="work__item">
-            <img
-              class="work__image"
-              src="./images/work1.png"
-              alt="design photo"
-            />
-            <div class="work__item__inner">
-              <h3 class="work__subtitle">Designing Dashboards</h3>
-              <ul class="work__calendar">
-                <li class="work__calendar__item">2020</li>
-                <li class="work__calendar__item">Dashboard</li>
-              </ul>
-              <p class="work__text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </li>
-          <li class="work__item">
-            <img
-              class="work__image"
-              src="./images/work2.png"
-              alt="design photo"
-            />
-            <div class="work__item__inner">
-              <h3 class="work__subtitle">Vibrant Portraits of 2020</h3>
-              <ul class="work__calendar">
-                <li class="work__calendar__item">2018</li>
-                <li class="work__calendar__item">Illustration</li>
-              </ul>
-              <p class="work__text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </li>
-          <li class="work__item">
-            <img
-              class="work__image"
-              src="./images/work3.png"
-              alt="design photo"
-            />
-            <div class="work__item__inner">
-              <h3 class="work__subtitle">36 Days of Malayalam type</h3>
-              <ul class="work__calendar">
-                <li class="work__calendar__item">2018</li>
-                <li class="work__calendar__item">Typography</li>
-              </ul>
-              <p class="work__text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
+        </section>
     </main>
     <!------------- Footer ----------------->
     <footer class="footer container" id="contact">
@@ -188,6 +140,5 @@
       </ul>
       <p class="footer__text">Copyright &#169 2020 All rights reserved</p>
     </footer>
-    <!------------ JS Files --------------->
   </body>
 </html>
