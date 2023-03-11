@@ -14,13 +14,17 @@
   <body>
     <!------------- Header ----------------->
     <header class="header container">
-      <ul class="header__nav">
+      <ul class="header__nav ">
+        <li><a class="header__link" href="index.html">Home</a></li>
         <li><a class="header__link" href="work.html">Works</a></li>
         <li><a class="header__link" href="blog.html">Blog</a></li>
         <li><a class="header__link" href="#contact">Contact</a></li>
       </ul>
-      <button class="header__button menu-toggle js-open-menu" aria-expanded="false"
-        aria-controls="mobile-menu">
+      <button 
+        class="header__button  js-open-menu" 
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        >
         <svg class="header__icon">
           <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
         </svg>
@@ -28,70 +32,7 @@
     </header>
     <!------------- Main ----------------->
     <main>
-      <!------------- Hero ----------------->
-      <section class="container hero">
-        <div class="hero__image-section">
-          <div class="hero__circle"></div>
-          <img class="hero__image" src="./images/John.png" alt="John" />
-        </div>
-        <div class="hero__inner">
-          <h1 class="hero__title">Hi, I am John, Creative Technologist</h1>
-          <p class="hero__text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-          <button class="hero__btn">Download Resume</button>
-        </div>
-      </section>
-      <!------------- Post ----------------->
-      <section class="post">
-        <div class="post__inner container">
-          <div class="post__element">
-            <h3 class="subtitle">Recent posts</h3>
-            <a class="post__link" href="blog.html">View all</a>
-          </div>
-          <ul class="post__list">
-            <li class="post__item">
-              <h2 class="post__subtitle">
-                Making a design system from scratch
-              </h2>
-              <ul class="post__calendar">
-                <li class="post__calendar__item">
-                  <p class="post__text">12 Feb 2020</p>
-                </li>
-                <li class="post__calendar__item">
-                  <p class="post__text">Design, Pattern</p>
-                </li>
-              </ul>
-              <p class="post__text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.<br />
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </li>
-            <li class="post__item">
-              <h2 class="post__subtitle">
-                Creating pixel perfect icons in Figma
-              </h2>
-              <ul class="post__calendar">
-                <li class="post__calendar__item">
-                  <p class="post__text">12 Feb 2020</p>
-                </li>
-                <li class="post__calendar__item">
-                  <p class="post__text">Design, Pattern</p>
-                </li>
-              </ul>
-              <p class="post__text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.<br />
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!------------- Work ----------------->
+        <!------------- Work ----------------->
       <section class="work container">
         <h3 class="subtitle">Featured works</h3>
         <ul class="work__list">
@@ -152,6 +93,25 @@
               </p>
             </div>
           </li>
+           <li class="work__item">
+            <img
+              class="work__image"
+              src="./images/work4.png"
+              alt="design photo"
+            />
+            <div class="work__item__inner">
+              <h3 class="work__subtitle">Components</h3>
+              <ul class="work__calendar">
+                <li class="work__calendar__item">2019</li>
+                <li class="work__calendar__item">Components, Design</li>
+              </ul>
+              <p class="work__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </li>
         </ul>
       </section>
     </main>
@@ -159,28 +119,28 @@
     <footer class="footer container" id="contact">
       <ul class="icon__list">
         <li>
-          <a class="icon__link" href="https://www.linkedin.com/in/uta-vlad/" target="_blank">
+          <a class="icon__link" href="" target="_blank">
             <svg class="icon">
               <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a class="icon__link" href="https://github.com/Fanttatraieste/John-portofolio" target="_blank">
+          <a class="icon__link" href="" target="_blank">
             <svg class="icon">
               <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a class="icon__link" href="https://www.figma.com/file/Els4GAiypc4C17jKU13D0I/FlowerShop?node-id=8%3A44&t=BB5YhVdMNd2MKjUJ-1" target="_blank">
+          <a class="icon__link" href="" target="_blank">
             <svg class="icon">
               <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a class="icon__link" href="https://fanttatraieste.github.io/cofee-shop/" target="_blank">
+          <a class="icon__link" href="" target="_blank">
             <svg class="icon">
               <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
             </svg>
@@ -189,8 +149,6 @@
       </ul>
       <p class="footer__text">Copyright &#169 2020 All rights reserved</p>
     </footer>
-    <!------------ JS Files --------------->
-    
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="js-close-menu close-menu">
         <svg
@@ -206,28 +164,32 @@
         </svg>
       </button>
 
+      
+
       <ul class="mobile-menu">
         <li class="mobile-menu__item">
-          <a class="link" href="index.html"> Studio </a>
+          <a class="link" href="index.html"> Home </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="link" href="portofolio.html"> Portofolio </a>
+          <a class="link" href="./aboutUs.html"> About us </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="link" href="contacts.html"> Contacts </a>
+          <a class="link" href="#cow"> How it’s made? </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="#products"> Our products </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="#contact"> Contact </a>
         </li>
       </ul>
-
-      
-
-      
     </div>
-    <script
+  </body>
+  <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
-  </body>
+  <script href="./js/mobile-menu.js"></script>
 </html>
